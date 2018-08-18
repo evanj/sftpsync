@@ -1,6 +1,6 @@
 # sftpsync: Synchronize SFTP to Cloud Storage
 
-Synchonizes an SFTP directory to a cloud storage bucket (S3 or Google Cloud Storage). This is mostly an experiment with Google's portable go-cloud library, but it might be useful to someone! If you need to work with FTP/SFTP and cloud storage, there are services you can use instead, such as [Conduit FTP, which provides an FTP/SFTP interface to cloud storage](https://www.conduitftp.com/).
+Synchonizes an SFTP directory to a cloud storage bucket (S3 or Google Cloud Storage). This is mostly an experiment to try [Google's portable cloud library](https://blog.golang.org/go-cloud), but it might be useful to someone! If you need to work with FTP/SFTP and cloud storage, there are services you can use instead, such as [Conduit FTP, which provides an FTP/SFTP interface to cloud storage](https://www.conduitftp.com/).
 
 ## Usage
 
