@@ -1,6 +1,6 @@
 # sftpsync: Synchronize SFTP to Cloud Storage
 
-Synchonizes an SFTP directory to a cloud storage bucket (S3 or Google Cloud Storage). This is mostly an experiment to try [Google's portable cloud library](https://blog.golang.org/go-cloud), but it might be useful to someone! If you need to work with FTP/SFTP and cloud storage, there are services you can use instead, such as [Conduit FTP, which provides an FTP/SFTP interface to cloud storage](https://www.conduitftp.com/).
+Synchonizes an SFTP directory to a cloud storage bucket (S3 or Google Cloud Storage). This is mostly an experiment to try [Google's portable cloud library](https://blog.golang.org/go-cloud), but it might be useful to someone! If you need to work with FTP/SFTP and cloud storage, there are services you can use instead, such as [Conduit FTP, which provides an FTP/SFTP interface to cloud storage](https://www.conduitftp.com/). See my [blog post for more details](https://www.evanjones.ca/portable-cloud-experiment.html).
 
 ## Usage
 
@@ -14,7 +14,7 @@ Assuming you have Go installed and your paths set up correctly:
 
 ### SSH/SFTP
 
-`sftpsync` uses your SSH agent if you have it configured. If that fails, it will use your current user name and prompt for a password. Otherwise, you can specify a username and password in the URL as `sftp://user:pass@host/`.
+`sftpsync` uses SSH agent if you have it configured. If that fails, it will use your current user name and prompt for a password. Otherwise, you can specify a username and password in the URL as `sftp://user:pass@host/`.
 
 ### AWS S3
 
