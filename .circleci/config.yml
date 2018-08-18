@@ -1,0 +1,14 @@
+# Based on CircleCI's default Go configuration:
+# https://circleci.com/docs/2.0/language-go/
+version: 2
+jobs:
+  build:
+    docker:
+      # specify the version
+      - image: circleci/golang:1.10
+
+    working_directory: /go/src/github.com/{{ORG_NAME}}/{{REPO_NAME}}
+    steps:
+      - checkout
+
+      - run: ./test.sh
